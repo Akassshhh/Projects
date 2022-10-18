@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>Registration form </h1>
+    <form>
+        <label>
+            Firstname :
+        </label>
+        <input type="text" name="First Name"> <br><br>
+        <label>
+            Middle Name :
+        </label>
+        <input type="text" name="Middle Name"><br><br>
+        <label>
+            Last Name :
+        </label>
+        <input type="text" name="Last Name"><br><br>
+        <br>
+        <label>
+            Course :
+        </label>
+        <select>
+            <option value="Course">Course</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="M.Tech">M.Tech</option>
+            <option value="B.Sc">B.Sc</option>
+            <option value="Management">Management</option>
+            <option value="Hotel Management">Hotel Management</option>
+            <option value="Law">Law</option>
+            <option value="Medical">Medical</option>
+        </select>
+        <br><br><br>
+        <label>
+            Gender :
+        </label>
+        <input type="radio" name="Male">Male
+        <input type="radio" name="Female">Female
+        <input type="radio" name="Not Specified">Not Specified
+
+        <br><br>
+
+
+
+        <br><br>
+        <label>
+            Address :
+        </label>
+        <textarea name="Address" cols="30" rows="10"></textarea> <br><br>
+
+        <label>
+            Contact :
+        </label>
+        <input type="number" name="country code" value="+91"> <br><br>
+        <label>
+            Email:
+            <input type="text" name="email"> <br><br>
+        </label>
+        <label>
+            Password:
+            <input type="password" id="pass" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                required>
+        </label>
+        <label>
+            Re-Enter:
+            <input type="password" id="re-pass" name="re-pass">
+        </label>
+        <br><br>
+        <input type="button" value="submit">
+    </form>
+
+</body>
+
+</html>
